@@ -39,7 +39,7 @@ externalDocs:
   description: |
     openFinance API Framework
     Implementation Guidelines
-    Account Information Service API for V2.1
+    Account Information Service API for V2.2
   url: https://www.berlin-group.org/openfinance-downloads
 
 servers:
