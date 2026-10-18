@@ -17,10 +17,10 @@ info:
     documents:
       - document:
         title: Відкритий банкінг в Україні. Специфікація API згоди
-        version: "2.0"
+        version: "2.1"
       - document:
         title: Відкритий банкінг в Україні. Протокол функцій та заходів безпеки у відкритому банкінгу
-        version: "2.0"
+        version: "2.1"
 
 externalDocs:
   description: |
