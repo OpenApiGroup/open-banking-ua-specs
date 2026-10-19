@@ -5,7 +5,7 @@
 **Consent (API згоди)**
 * 📁 [Актуальна версія v2.1](base/consent/v2.1)
 * 📁 [Попередня версія v2.0](base/consent/v2.0)
-* 📦 [Архів (v1.3, v1.2, mvp-1.0)](base/consent/archive)
+* 📦 [Архів](base/consent/archive)
 
 **AIS (Інформація по рахунку)**
 * 📁 [Актуальна версія v2.1](base/ais/v2.1)
