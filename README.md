@@ -23,6 +23,7 @@
 ### 2. Комерційні API (Commercial)
 
 **VRP (Змінні регулярні платежі)**
-- 📝 [Драфт майбутньої версії (draft)](commercial/vrp/draft)
-- 📁 [Актуальна версія (v1.0)](commercial/vrp/v1.0)
+- 📝 [Драфт майбутньої версії (draft)](commercial/vrp/draft) *(draft)*
+- 📁 [Актуальна версія vХ.Х](commercial/vrp/vХ.Х)
+- 📁 [Попередня версія vХ.Х](commercial/vrp/vХ.Х)
 - 📦 [Архів](commercial/vrp/archive)
