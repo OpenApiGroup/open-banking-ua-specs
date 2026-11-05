@@ -25,7 +25,7 @@ info:
 
 externalDocs:
   description: |
-    openFinance API Framewok XS2A API as PSD2 Interface Implementation Guidelines
+    openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines
   url: https://www.berlin-group.org/openfinance-downloads
 
 servers:
@@ -1191,7 +1191,7 @@ components:
           $ref: '#/components/schemas/hrefType'
     regulatoryReporting:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Regulatory Reporting\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Regulatory Reporting\" for more details.
       type: object
       properties:
         debitCreditReportingIndicator:
@@ -1228,7 +1228,7 @@ components:
           $ref: '#/components/schemas/Max500Text'
     hrefType:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"href Type\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"href Type\" for more details.
       type: object
       required:
         - href
@@ -1238,7 +1238,7 @@ components:
           type: string
     remittance:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Remittance\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Remittance\" for more details.
       type: object
       properties:
         referredDocumentInformation:
@@ -1378,7 +1378,7 @@ components:
           $ref: '#/components/schemas/links'
     financialInstitutionIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Financial Institution Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Financial Institution Identification\" for more details.
       type: object
       properties:
         bicfi:
@@ -1474,7 +1474,7 @@ components:
       example: 'FR7612345987650123456789014'
     additionalRequestInformation:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Additional Request Information\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Additional Request Information\" for more details.
       type: object
       required:
         - requestedExpiryDateTime
@@ -1573,7 +1573,7 @@ components:
           $ref: '#/components/schemas/links'
     genericAccountIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Generic Account Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Generic Account Identification\" for more details.
       type: object
       required:
         - identification
@@ -1635,7 +1635,7 @@ components:
         - $ref: '#/components/schemas/MessageCode_PisSpecific_405'
     genericOrganisationIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Generic Organisation Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Generic Organisation Identification\" for more details.
       type: object
       required:
         - identification
@@ -1662,13 +1662,13 @@ components:
             - $ref: '#/components/schemas/Max35Text'
     messageCode_SigningBasketSpecific:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Signing Basket Specific Error Codes\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Signing Basket Specific Error Codes\" for more details.
       oneOf:
         - $ref: '#/components/schemas/MessageCode_SigningBasketSpecific_400'
         - $ref: '#/components/schemas/MessageCode_SigningBasketSpecific_409'
     privateIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Private Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Private Identification\" for more details.
       type: object
       properties:
         birthDate:
@@ -1764,6 +1764,12 @@ components:
             $ref: '#/components/schemas/Max140Text'
           example:
             - '{"Ref Number Merchant"}'
+        additionalRequestInformation:
+          description: |
+            Request related information which is not directly linked to the payment transaction.
+            Only applicable for request to pay services and extended payment services.
+          allOf:
+            - $ref: '#/components/schemas/additionalRequestInformation'
     GeoLocation:
       description: |
         See document \"openFinance API Framework Data Dictionary\", section \"Geo Location\" for more details.
@@ -1873,7 +1879,7 @@ components:
       example: 'PAYMENT_FAILED'
     partyDescription3:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Description3\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Description3\" for more details.
       type: object
       properties:
         identification:
@@ -1899,7 +1905,7 @@ components:
       example: 'KID_MISSING'
     partyDescription2:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Description2\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Description2\" for more details.
       type: object
       properties:
         name:
@@ -1930,7 +1936,7 @@ components:
           $ref: '#/components/schemas/Max500Text'
     partyDescription1:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Description1\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Description1\" for more details.
       type: object
       properties:
         name:
@@ -2023,7 +2029,7 @@ components:
             $ref: '#/components/schemas/minimum_Target2_Core'
     partyIdentification1:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Identification1\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Identification1\" for more details.
       type: object
       required:
         - privateId
@@ -2047,7 +2053,7 @@ components:
       example: 'HIGH'
     organisationIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Organisation Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Organisation Identification\" for more details.
       type: object
       properties:
         anyBIC:
@@ -2161,7 +2167,7 @@ components:
       example: 'CANCELLATION_INVALID'
     accountReference1:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Account Reference1\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Account Reference1\" for more details.
       type: object
       properties:
         iban:
@@ -2190,7 +2196,7 @@ components:
             - $ref: '#/components/schemas/CurrencyCode'
     accountReference3:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Account Reference3\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Account Reference3\" for more details.
       type: object
       properties:
         iban:
@@ -2627,7 +2633,7 @@ components:
         - $ref: '#/components/schemas/messageCode_PushAisSpecific'
     psuCredentials:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"PSU Credentials\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"PSU Credentials\" for more details.
       type: object
       properties:
         password:
@@ -2640,7 +2646,7 @@ components:
           type: string
     referredDocumentInformation:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Referred Document Information\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Referred Document Information\" for more details.
       type: object
       properties:
         typeCode:
@@ -2670,7 +2676,7 @@ components:
             - $ref: '#/components/schemas/ISODate'   
     paymentIdentification1:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Payment Identification1\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Payment Identification1\" for more details.
       type: object
       properties:
         endToEndId:
@@ -2818,7 +2824,7 @@ components:
       example: 'SPOT'
     links:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Links\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Links\" for more details.
       type: object
       properties:
         scaRedirect:
@@ -3097,7 +3103,7 @@ components:
         - $ref: '#/components/schemas/MessageCode_ServiceUnspecific_409'
     partyDescription:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Description\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Description\" for more details.
       type: object
       properties:
         name:
@@ -3124,7 +3130,7 @@ components:
             - $ref: '#/components/schemas/additionalPartyInformation'
     genericFinancialInstitutionIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Generic Financial Institution Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Generic Financial Institution Identification\" for more details.
       type: object
       required:
         - identification
@@ -3263,7 +3269,7 @@ components:
                 - $ref: '#/components/schemas/accountReference1'
     accountOwner:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Account Owner\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Account Owner\" for more details.
       type: object
       required:
         - name
@@ -3357,7 +3363,7 @@ components:
             - '{"Ref Number Merchant"}'
     postalAddress:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Postal Address\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Postal Address\" for more details.
       type: object
       properties:
         addressLines:
@@ -3456,7 +3462,7 @@ components:
                 - $ref: '#/components/schemas/accountReference1'
     personIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Person Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Person Identification\" for more details.
       type: object
       required:
         - identification
@@ -3490,7 +3496,7 @@ components:
       example: 'ACCESS_EXCEEDED'
     paymentExchangeRate:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Payment Exchange Rate\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Payment Exchange Rate\" for more details.
       type: object
       properties:
         unitCurrency:
@@ -3689,7 +3695,7 @@ components:
           $ref: '#/components/schemas/Max500Text'
     clearingSystemMemberIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Clearing System Member Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Clearing System Member Identification\" for more details.
       type: object
       properties:
         memberId:
@@ -3772,9 +3778,15 @@ components:
           type: array
           items:
               $ref: '#/components/schemas/remittance'      
+        additionalRequestInformation:
+          description: |
+            Request related information which is not directly linked to the payment transaction.
+            Only applicable for request to pay services and extended payment services.
+          allOf:
+            - $ref: '#/components/schemas/additionalRequestInformation'
     additionalPartyInformation:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Additional Party Information\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Additional Party Information\" for more details.
       type: object
       properties:
         tradeName:
@@ -3798,7 +3810,7 @@ components:
             - $ref: '#/components/schemas/GeoLocation'
     agentDescription1:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Agent Description1\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Agent Description1\" for more details.
       type: object
       required:
         - financialInstitutionId
@@ -4289,7 +4301,7 @@ components:
       example: 'OTHR'
     agentDescription:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Agent Description\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Agent Description\" for more details.
       type: object
       required:
         - financialInstitutionId
@@ -4310,7 +4322,7 @@ components:
             - $ref: '#/components/schemas/Max140Text'
     authenticationObject:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Authentication Object\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Authentication Object\" for more details.
       type: object
       required:
         - authenticationType
@@ -4344,7 +4356,7 @@ components:
           type: string
     paymentIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Payment Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Payment Identification\" for more details.
       type: object
       properties:
         instructionId:
@@ -4395,7 +4407,7 @@ components:
       example: 'PUOR'
     creditorReferenceInformation:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Creditor Reference Information\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Creditor Reference Information\" for more details.
       type: object
       required:
         - reference
@@ -4558,7 +4570,7 @@ components:
       example: 'SE'
     clientMessageInformation:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Client Message Information\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Client Message Information\" for more details.
       type: object
       required:
         - category
@@ -4660,7 +4672,7 @@ components:
         - $ref: '#/components/schemas/MessageCode_PisSpecific_403'
     proxyAccountIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Proxy Account Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Proxy Account Identification\" for more details.
       type: object
       required:
         - identification
@@ -4732,7 +4744,7 @@ components:
                 $ref: '#/components/schemas/Max2Text'
     paymentConditions:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Payment Conditions\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Payment Conditions\" for more details.
       type: object
       properties:
         amountModificationAllowed:
@@ -5228,6 +5240,12 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/remittance'        
+        additionalRequestInformation:
+          description: |
+            Request related information which is not directly linked to the payment transaction.
+            Only applicable for request to pay services and extended payment services.
+          allOf:
+            - $ref: '#/components/schemas/additionalRequestInformation'
     BulkPayment_generic:
       type: object
       description: |
@@ -5338,7 +5356,7 @@ components:
             $ref: '#/components/schemas/clientMessageInformation'
     challenge:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Challenge\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Challenge\" for more details.
       type: object
       properties:
         image:
@@ -5453,7 +5471,7 @@ components:
                 $ref: '#/components/schemas/Max2Text'
     partyIdentification:
       description: |
-        See document \"openFinance API Framewok Data Dictionary\", section \"Party Identification\" for more details.
+        See document \"openFinance API Framework Data Dictionary\", section \"Party Identification\" for more details.
       type: object
       properties:
         organisationId:
