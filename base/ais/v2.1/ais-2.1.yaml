@@ -1656,10 +1656,6 @@ components:
       type: string
       maxLength: 140
       example: 'Text, maximum of 140 characters.'  
-    Max420Text:
-      type: string
-      maxLength: 420
-      example: 'Text, maximum of 420 characters.'
     PersonIdentificationCode:
       description: |
         See document \"openFinance API Framework Data Dictionary\", section \"Other ISO-related basic Types\" for more details.
@@ -3914,7 +3910,7 @@ components:
           description: |
           type: array
           items:
-            $ref: '#/components/schemas/Max420Text'
+            $ref: '#/components/schemas/Max140Text'
         remittanceInformationStructured:
           description: |
           type: array
