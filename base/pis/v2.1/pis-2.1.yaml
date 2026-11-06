@@ -2227,11 +2227,7 @@ components:
     Max140Text:
       type: string
       maxLength: 140
-      example: 'Text, maximum of 140 characters.'
-    Max420Text:
-      type: string
-      maxLength: 420
-      example: 'Text, maximum of 420 characters.'  
+      example: 'Text, maximum of 140 characters.' 
     creditorIdType:
       type: string
       enum:
@@ -3356,7 +3352,7 @@ components:
               such as commercial invoices in an accounts' receivable system, in an unstructured form.
           type: array
           minItems: 1
-          maxItems: 1
+          maxItems: 3
           items:
             $ref: '#/components/schemas/Max420Text'
           example:
