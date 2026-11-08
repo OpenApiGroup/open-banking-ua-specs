@@ -3352,9 +3352,9 @@ components:
               such as commercial invoices in an accounts' receivable system, in an unstructured form.
           type: array
           minItems: 1
-          maxItems: 3
+          maxItems: 1
           items:
-            $ref: '#/components/schemas/Max420Text'
+            $ref: '#/components/schemas/Max140Text'
           example:
             - '{"Ref Number Merchant"}'
     postalAddress:
@@ -3763,7 +3763,7 @@ components:
           minItems: 1
           maxItems: 1
           items:
-            $ref: '#/components/schemas/Max420Text'
+            $ref: '#/components/schemas/Max140Text'
           example:
             - '{"Ref Number Merchant"}'
         remittanceInformationStructured:
@@ -3938,7 +3938,7 @@ components:
               such as commercial invoices in an accounts' receivable system, in an unstructured form.
           type: array
           items:
-            $ref: '#/components/schemas/Max420Text'
+            $ref: '#/components/schemas/Max140Text'
           example:
             - '{"Ref Number Merchant"}'
         remittanceInformationStructured:
