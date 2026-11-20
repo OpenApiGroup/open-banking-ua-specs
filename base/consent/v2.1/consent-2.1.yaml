@@ -2276,15 +2276,15 @@ components:
         See document \"Відкритий банкінг в Україні. Протокол функцій та заходів безпеки".
       type: string
       enum:
-        - received
+        - received - в Україні не використовується
         - psuIdentified
         - psuAuthenticated
-        - scaMethodSelected
+        - scaMethodSelected - в Україні не використовується
         - started
-        - unconfirmed
+        - unconfirmed- в Україні не використовується
         - finalised
         - failed
-        - exempted
+        - exempted - в Україні не використовується
       example: 'received'
     error_NG_400_AIS: 
       type: object
